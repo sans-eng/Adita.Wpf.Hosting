@@ -63,7 +63,7 @@ A hosting library for .NET WPF application
 
  #### Override StartupObject on project properties to your new entry point class
 
-    example:
+ example:
 
         <StartupObject>Adita.Wpf.Hosting.Sample.Startup</StartupObject>
 
