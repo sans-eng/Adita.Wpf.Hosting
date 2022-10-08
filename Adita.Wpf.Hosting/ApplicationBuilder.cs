@@ -20,7 +20,7 @@ namespace Adita.Wpf.Hosting
         /// <inheritdoc/>
         public IServiceCollection Services { get; } = new ServiceCollection();
         /// <inheritdoc/>
-        public IConfigurationBuilder ConfigurationBuilder { get; } = new ConfigurationBuilder();
+        public IConfiguration Configuration { get; private set; } = default!;
 
         #endregion Public properties
 
@@ -39,7 +39,7 @@ namespace Adita.Wpf.Hosting
 
             TApp app = new();
 
-            app.SetConfiguration(ConfigurationBuilder.Build());
+            app.SetConfiguration(Configuration);
             app.SetServiceProvider(Services.BuildServiceProvider());
             _isBuilt = true;
             return app;
@@ -47,7 +47,9 @@ namespace Adita.Wpf.Hosting
         /// <inheritdoc/>
         public IApplicationBuilder<TApp> ConfigureAppConfiguration(Action<IConfigurationBuilder> configureAction)
         {
-            configureAction.Invoke(ConfigurationBuilder);
+            ConfigurationBuilder builder = new ConfigurationBuilder();
+            configureAction.Invoke(builder);
+            Configuration = builder.Build();
             return this;
         }
         /// <inheritdoc/>

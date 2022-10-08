@@ -15,14 +15,14 @@ namespace Adita.Wpf.Hosting
         /// </summary>
         IServiceCollection Services { get; }
         /// <summary>
-        /// Gets a <see cref="ConfigurationBuilder"/> that used for building the Windows Presentation Foundation application.
+        /// Gets a <see cref="Configuration"/> that used for building the Windows Presentation Foundation application.
         /// </summary>
-        IConfigurationBuilder ConfigurationBuilder { get; }
+        IConfiguration Configuration { get; }
         #endregion Properties
 
         #region Methods
         /// <summary>
-        /// Sets up application configuration using specified <paramref name="configureAction"/>, This can be called multiple times and the results will be additive..
+        /// Sets up application configuration using specified <paramref name="configureAction"/>, This can be called multiple times and the results will be replaced.
         /// </summary>
         /// <param name="configureAction">An <see cref="Action{T}"/> of <see cref="IConfigurationBuilder"/> to sets up the application configuration
         /// that will be used to construct the application.</param>
