@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32922.545
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adita.Wpf.Hosting", "Adita.Wpf.Hosting\Adita.Wpf.Hosting.csproj", "{3EC613D5-E802-48E3-855F-6848E585ADAC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adita.Wpf.Hosting.Sample", "Adita.Wpf.Hosting.Sample\Adita.Wpf.Hosting.Sample.csproj", "{006293AB-FEEA-4A6F-90F3-2765E4880A5D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3EC613D5-E802-48E3-855F-6848E585ADAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EC613D5-E802-48E3-855F-6848E585ADAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EC613D5-E802-48E3-855F-6848E585ADAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EC613D5-E802-48E3-855F-6848E585ADAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{006293AB-FEEA-4A6F-90F3-2765E4880A5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{006293AB-FEEA-4A6F-90F3-2765E4880A5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{006293AB-FEEA-4A6F-90F3-2765E4880A5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{006293AB-FEEA-4A6F-90F3-2765E4880A5D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6C8D503F-5921-4AE0-B604-59B9416B2F90}
+	EndGlobalSection
+EndGlobal

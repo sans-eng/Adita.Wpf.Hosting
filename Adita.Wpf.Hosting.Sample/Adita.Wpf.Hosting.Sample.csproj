@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net6.0-windows</TargetFramework>
+		<Nullable>enable</Nullable>
+		<UseWPF>true</UseWPF>
+		<StartupObject>Adita.Wpf.Hosting.Sample.Startup</StartupObject>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Adita.Wpf.Hosting\Adita.Wpf.Hosting.csproj" />
+	</ItemGroup>
+	<Target Name="RemoveDuplicateAnalyzers" BeforeTargets="CoreCompile">
+		<!-- Work around https://github.com/dotnet/wpf/issues/6792 -->
+
+		<ItemGroup>
+			<FilteredAnalyzer Include="@(Analyzer-&gt;Distinct())" />
+			<Analyzer Remove="@(Analyzer)" />
+			<Analyzer Include="@(FilteredAnalyzer)" />
+		</ItemGroup>
+	</Target>
+</Project>
