@@ -15,14 +15,21 @@
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
     <Copyright>©2022 Adita</Copyright>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/sans-eng/Adita.Wpf.Hosting</RepositoryUrl>
+    <PackageReleaseNotes>First release</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="..\..\..\..\..\Designs\favicon.png">
+    <None Include="..\favicon.png">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
     <None Include="..\LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
