@@ -10,16 +10,17 @@ A hosting library for .NET WPF application
         public partial class App : Application, IApplication
         {
             //...
-        }
+        
 
-        public void SetConfiguration(IConfiguration configuration)
-        {
-            Configuration = configuration;
-        }
+            public void SetConfiguration(IConfiguration configuration)
+            {
+                Configuration = configuration;
+            }
 
-        public void SetServiceProvider(IServiceProvider serviceProvider)
-        {
-            ServiceProvider = serviceProvider;
+            public void SetServiceProvider(IServiceProvider serviceProvider)
+            {
+                ServiceProvider = serviceProvider;
+            }
         }
     
 
