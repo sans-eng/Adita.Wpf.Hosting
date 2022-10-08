@@ -12,6 +12,6 @@
         <TextBlock HorizontalAlignment="Center"
                    VerticalAlignment="Center"
                    Text="{Binding Content}"
-                   FontSize="30"/>
+                   FontSize="20"/>
     </Grid>
 </Window>

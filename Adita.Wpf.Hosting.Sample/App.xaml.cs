@@ -16,14 +16,6 @@ namespace Adita.Wpf.Hosting.Sample
         public IConfiguration Configuration { get; private set; } = default!;
         #endregion Public properties
 
-        #region Protected methods
-        protected override void OnStartup(StartupEventArgs e)
-        {
-            MainWindow = new MainWindow();
-            MainWindow.Show();
-        }
-        #endregion Protected methods
-
         #region IApplication methods implementations
         public void SetConfiguration(IConfiguration configuration)
         {
@@ -34,5 +26,13 @@ namespace Adita.Wpf.Hosting.Sample
             ServiceProvider = serviceProvider;
         }
         #endregion IApplication methods implementations
+
+        #region Event handlers
+        private void Application_Startup(object sender, StartupEventArgs e)
+        {
+            MainWindow = new MainWindow();
+            MainWindow.Show();
+        }
+        #endregion Event handlers
     }
 }

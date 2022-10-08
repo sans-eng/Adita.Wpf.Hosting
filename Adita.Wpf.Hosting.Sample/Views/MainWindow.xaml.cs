@@ -13,6 +13,8 @@ namespace Adita.Wpf.Hosting.Sample.Views
         {
             InitializeComponent();
             DataContext = App.Current.ServiceProvider.GetRequiredService<MainViewModel>();
+
+            var color = App.Current.Resources["testColor"];
         }
     }
 }
