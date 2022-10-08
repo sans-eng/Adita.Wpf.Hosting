@@ -2,11 +2,11 @@
 
 A hosting library for .NET WPF application
 
-##How to use
+## How to use
 
-#### Implement <code>Adita.Wpf.Hosting.IApplication</code> to your App.xaml.cs
+#### Implement <code>Adita.Wpf.Hosting.IApplication</code> to your <code>App.xaml.cs</code>
     
-    <code>
+    ```
         public partial class App : Application, IApplication
         {
             //...
@@ -23,11 +23,11 @@ A hosting library for .NET WPF application
         {
             ServiceProvider = serviceProvider;
         }
-    </code>
+    ```
 
- #### Create a class to override entry point of application with <c>Main()</c> method
+ #### Create a class to override entry point of application with <code>Main()</code> method
 
-	<code>
+	```
 		public static void Main()
         {
             IApplicationBuilder<App> builder = new ApplicationBuilder<App>();
@@ -59,14 +59,14 @@ A hosting library for .NET WPF application
 
             application.Run();
         }
-	</code>
+	```
 
  #### Override StartupObject on project properties to your new entry point class
 
     example:
-    <code>
+    ```
         <StartupObject>Adita.Wpf.Hosting.Sample.Startup</StartupObject>
-    </code>
+    ```
 
 
 Note: Sample project is on repository.
