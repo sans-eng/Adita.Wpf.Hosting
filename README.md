@@ -11,9 +11,7 @@ A hosting library for .NET WPF application
         {
             //...
         }
-    </code>
 
-    <code>
         public void SetConfiguration(IConfiguration configuration)
         {
             Configuration = configuration;
