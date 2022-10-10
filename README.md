@@ -11,6 +11,8 @@ A hosting library for .NET WPF application
         {
             //...
         
+            public IServiceProvider ServiceProvider { get; private set; } = default!;
+            public IConfiguration Configuration { get; private set; } = default!;
 
             public void SetConfiguration(IConfiguration configuration)
             {
